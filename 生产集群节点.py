@@ -59,7 +59,7 @@ def gen_concated():
 
     # gen auto_increasement primary key `id`
     df.reset_index(drop=True, inplace=True)
-    df['id'] = result.index + 1
+    df['id'] = df.index + 1
 
     return df
 
